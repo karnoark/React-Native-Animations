@@ -3,6 +3,8 @@ import React from "react";
 import ThreeCircles from "@/components/HelloWorld/ThreeCircles";
 import FillAndStrokes from "@/components/HelloWorld/FillAndStrokes";
 import LinearGradientCircles from "@/components/HelloWorld/LinearGradientCircles";
+import GroupOperations from "@/components/HelloWorld/GroupOperations";
+import Shapes from "@/components/HelloWorld/Shapes";
 
 const HelloWorld = () => {
   const height = 256;
@@ -20,6 +22,12 @@ const HelloWorld = () => {
 
       <Text style={styles.Heading}>Linear Gradient</Text>
       <LinearGradientCircles />
+
+      <Text style={styles.Heading}>Group Operations</Text>
+      <GroupOperations />
+
+      <Text style={styles.Heading}>Shapes</Text>
+      <Shapes />
     </ScrollView>
   );
 };

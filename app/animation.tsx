@@ -4,6 +4,7 @@ import { useLocalSearchParams } from "expo-router";
 
 import { Stickers } from "@/components/StickerApp/Stickers";
 import HelloWorld from "@/components/HelloWorld/HelloWorld";
+import AtlasComponent from "@/components/Other/AtlasComponent";
 
 const Page = () => {
   const { animationId } = useLocalSearchParams();
@@ -22,6 +23,14 @@ const Page = () => {
       return (
         <View>
           <HelloWorld />
+        </View>
+      );
+      break;
+
+    case "atlas":
+      return (
+        <View>
+          <AtlasComponent />
         </View>
       );
       break;

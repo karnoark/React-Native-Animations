@@ -10,13 +10,17 @@ const FillAndStrokes = () => {
   const c = vec(width / 2, height / 2);
   const r = (width - strokeWidth) / 2;
   return (
-    <Canvas style={{ width, height }}>
-      <Circle c={c} r={r} color="red">
-        <Paint color="lightblue" />
-        <Paint color="#adbce6" style="stroke" strokeWidth={strokeWidth} />
-        <Paint color="#ade6d8" style="stroke" strokeWidth={strokeWidth / 2} />
-      </Circle>
-    </Canvas>
+    <View
+      style={{ borderColor: "#ec0076", borderWidth: StyleSheet.hairlineWidth }}
+    >
+      <Canvas style={{ width, height }}>
+        <Circle c={c} r={r} color="red">
+          <Paint color="lightblue" />
+          <Paint color="#adbce6" style="stroke" strokeWidth={strokeWidth} />
+          <Paint color="#ade6d8" style="stroke" strokeWidth={strokeWidth / 2} />
+        </Circle>
+      </Canvas>
+    </View>
   );
 };
 

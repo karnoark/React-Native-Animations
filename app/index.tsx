@@ -45,6 +45,13 @@ export default function Index() {
             the sticker
           </Text>
         </View>
+
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("atlas")}>
+            <Text style={styles.Heading}>Atlas</Text>
+          </TouchableOpacity>
+          <Text>Multiple instances of same texture/image</Text>
+        </View>
       </View>
     </View>
   );
