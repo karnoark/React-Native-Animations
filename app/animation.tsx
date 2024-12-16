@@ -3,6 +3,7 @@ import React from "react";
 import { useLocalSearchParams } from "expo-router";
 
 import { Stickers } from "@/components/StickerApp/Stickers";
+import HelloWorld from "@/components/HelloWorld/HelloWorld";
 
 const Page = () => {
   const { animationId } = useLocalSearchParams();
@@ -13,6 +14,14 @@ const Page = () => {
       return (
         <View>
           <Stickers />
+        </View>
+      );
+      break;
+
+    case "helloworld":
+      return (
+        <View>
+          <HelloWorld />
         </View>
       );
       break;

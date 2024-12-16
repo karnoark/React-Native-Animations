@@ -114,7 +114,7 @@ export const Stickers = () => {
   return (
     <GestureHandlerRootView>
       <GestureDetector gesture={pan}>
-        <Animated.View style={[styles.container, style]}>
+        <Animated.View style={style}>
           <View>
             <Canvas style={{ width, height }}>
               <Picture image={image} />
