@@ -66,6 +66,20 @@ export default function Index() {
           </TouchableOpacity>
           <Text>neomorphism</Text>
         </View>
+
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("animation")}>
+            <Text style={styles.Heading}>Animations</Text>
+          </TouchableOpacity>
+          <Text>Animations !!! here we go</Text>
+        </View>
+
+        {/* <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("gestures")}>
+            <Text style={styles.Heading}>Gestures With Skia</Text>
+          </TouchableOpacity>
+          <Text>Gestures !!! here we go</Text>
+        </View> */}
       </View>
     </View>
   );

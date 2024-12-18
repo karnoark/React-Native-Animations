@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { useLocalSearchParams } from "expo-router";
 
@@ -8,6 +8,10 @@ import AtlasComponent from "@/components/Other/AtlasComponent";
 import VideoUsingSkia from "@/components/Other/Shaders";
 import Shaders from "@/components/Other/Shaders";
 import ShadowsComponent from "@/components/Other/ShadowsComponent";
+import AnimationComponent from "@/components/Other/AnimationComponent";
+import AnimatedGradient from "@/components/Other/AnimatedGradient";
+import GesturesWithSkia from "@/components/Other/GesturesWithSkia";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const Page = () => {
   const { animationId } = useLocalSearchParams();
@@ -54,6 +58,29 @@ const Page = () => {
       );
       break;
 
+    case "animation":
+      return (
+        <GestureHandlerRootView>
+          <ScrollView
+            contentContainerStyle={{
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <AnimationComponent />
+            <Text style={styles.Heading}>Animated Gradient</Text>
+            <AnimatedGradient />
+            <Text style={styles.Heading}>Gestures with Skia</Text>
+            <GesturesWithSkia />
+          </ScrollView>
+        </GestureHandlerRootView>
+      );
+      break;
+
+    case "gestures":
+      return <View></View>;
+      break;
+
     default:
       break;
   }
@@ -67,4 +94,10 @@ const Page = () => {
 
 export default Page;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  Heading: {
+    color: "#203981",
+    fontSize: 20,
+    fontWeight: "200",
+  },
+});
