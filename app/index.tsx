@@ -52,6 +52,20 @@ export default function Index() {
           </TouchableOpacity>
           <Text>Multiple instances of same texture/image</Text>
         </View>
+
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("shaders")}>
+            <Text style={styles.Heading}>Shaders</Text>
+          </TouchableOpacity>
+          <Text>Shaders need no introduction</Text>
+        </View>
+
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("shadows")}>
+            <Text style={styles.Heading}>Shadows</Text>
+          </TouchableOpacity>
+          <Text>neomorphism</Text>
+        </View>
       </View>
     </View>
   );
