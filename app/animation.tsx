@@ -14,6 +14,7 @@ import GesturesWithSkia from "@/components/Other/GesturesWithSkia";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import ElementTracking from "@/components/Other/ElementTracking";
 import AnimatedLoader from "@/components/AnimatedLoader/AnimatedLoader";
+import SkiaPathWord from "@/components/SkiaPathWord/SkiaPathWord";
 
 const Page = () => {
   const { animationId } = useLocalSearchParams();
@@ -83,6 +84,10 @@ const Page = () => {
 
     case "loader":
       return <AnimatedLoader />;
+      break;
+
+    case "skiapathword":
+      return <SkiaPathWord />;
       break;
 
     default:

@@ -83,6 +83,13 @@ export default function Index() {
             using reanimated
           </Text>
         </View>
+
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("skiapathword")}>
+            <Text style={styles.Heading}>Skia Path Word</Text>
+          </TouchableOpacity>
+          <Text>Texual Path Animation</Text>
+        </View>
       </View>
     </View>
   );
