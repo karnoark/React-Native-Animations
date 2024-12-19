@@ -12,6 +12,8 @@ import AnimationComponent from "@/components/Other/AnimationComponent";
 import AnimatedGradient from "@/components/Other/AnimatedGradient";
 import GesturesWithSkia from "@/components/Other/GesturesWithSkia";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import ElementTracking from "@/components/Other/ElementTracking";
+import AnimatedLoader from "@/components/AnimatedLoader/AnimatedLoader";
 
 const Page = () => {
   const { animationId } = useLocalSearchParams();
@@ -72,13 +74,15 @@ const Page = () => {
             <AnimatedGradient />
             <Text style={styles.Heading}>Gestures with Skia</Text>
             <GesturesWithSkia />
+            <Text style={styles.Heading}>Element Tracking</Text>
+            <ElementTracking />
           </ScrollView>
         </GestureHandlerRootView>
       );
       break;
 
-    case "gestures":
-      return <View></View>;
+    case "loader":
+      return <AnimatedLoader />;
       break;
 
     default:

@@ -74,12 +74,15 @@ export default function Index() {
           <Text>Animations !!! here we go</Text>
         </View>
 
-        {/* <View style={{ marginTop: 15 }}>
-          <TouchableOpacity onPress={() => handlePress("gestures")}>
-            <Text style={styles.Heading}>Gestures With Skia</Text>
+        <View style={{ marginTop: 15 }}>
+          <TouchableOpacity onPress={() => handlePress("loader")}>
+            <Text style={styles.Heading}>Animated Loader</Text>
           </TouchableOpacity>
-          <Text>Gestures !!! here we go</Text>
-        </View> */}
+          <Text>
+            Animated Loader built with complete ui using skia and animation
+            using reanimated
+          </Text>
+        </View>
       </View>
     </View>
   );
